@@ -7,8 +7,8 @@
     <!-- trunk: 编译 lib target 生成 WASM -->
     
 <script type="module">
-import init, * as bindings from '/etf/etf_picker-ef80c319f2a41361.js';
-const wasm = await init({ module_or_path: '/etf/etf_picker-ef80c319f2a41361_bg.wasm' });
+import init, * as bindings from '/etf/etf_picker-8621e1e8211ea1b.js';
+const wasm = await init({ module_or_path: '/etf/etf_picker-8621e1e8211ea1b_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -41,7 +41,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             font-size: 16px;
         }
     </style>
-<link rel="modulepreload" href="/etf/etf_picker-ef80c319f2a41361.js" crossorigin="anonymous" integrity="sha384-uoLu1gfQrIfl4r7QFM4ENEWRzRRzij/vqWXDMY5hCFSim3efG1RpMmxYkkhWA1co"><link rel="preload" href="/etf/etf_picker-ef80c319f2a41361_bg.wasm" crossorigin="anonymous" integrity="sha384-R/mTGwqSsMC3kP+ng1ojEXN+eiUAR8mdcPKNbUrv9CcGcOLAukwFuXlvIx8/lWIW" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/etf/etf_picker-8621e1e8211ea1b.js" crossorigin="anonymous" integrity="sha384-TR1hvEzJQewC/Le962rmDHY+460hG6yCJShpkdgqZpEICFS7EE+fe4ZwW3JYGzYa"><link rel="preload" href="/etf/etf_picker-8621e1e8211ea1b_bg.wasm" crossorigin="anonymous" integrity="sha384-kJi2Cs4pPPSwEmV+e20dcmktihxcXRDYZpMem/TvV8GXtBY5/3U77GEibpnOYh2q" as="fetch" type="application/wasm"></head>
 <body>
     <div class="loading" id="loading">Loading...</div>
     <canvas id="main_canvas"></canvas>
